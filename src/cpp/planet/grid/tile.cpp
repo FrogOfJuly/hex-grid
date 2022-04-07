@@ -1,6 +1,5 @@
 #include "tile.h"
 #include "corner.h"
-#include "../../math/math_common.h"
 
 Tile::Tile (int i, int e) :
 	id (i), edge_count (e) {
@@ -56,14 +55,4 @@ const Edge* nth_edge (const Tile& t, int n) {
 		n % edge_count(t) + edge_count(t) :
 		n % edge_count(t);
 	return t.edges[k];
-}
-
-std::vector<Vector2> polygon (const Tile* t, Quaternion d) {
-	std::vector<Vector2> p;
-	Quaternion q = reference_rotation(t, d);
-	for (int i=0; i<edge_count(t); i++) {
-		Vector3 c = q * vector(nth_corner(t, i));
-		p.push_back(Vector2(c.x, c.y));
-	}
-	return p;
 }
