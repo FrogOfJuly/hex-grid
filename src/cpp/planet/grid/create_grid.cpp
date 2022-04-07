@@ -6,11 +6,12 @@
 using std::cout;
 
 Grid *size_n_grid(int size) {
-    if (size == 0) {
-        return size_0_grid();
-    } else {
-        return _subdivided_grid(size_n_grid(size - 1));
+    auto *grid = size_0_grid();
+    while (size > 0) {
+        grid = _subdivided_grid(grid);
+        --size;
     }
+    return grid;
 }
 
 Grid *size_0_grid() {
