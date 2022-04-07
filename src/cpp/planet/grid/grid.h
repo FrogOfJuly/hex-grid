@@ -10,7 +10,7 @@ class Planet;
 
 class Grid {
 public:
-	Grid (int);
+	explicit Grid (int);
 	
 	int size;
 	std::deque<Tile> tiles;
