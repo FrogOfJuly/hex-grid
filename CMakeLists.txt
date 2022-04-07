@@ -22,17 +22,17 @@ endif()
 #src/cpp/wrapper.cpp
 
 set(LIB_SOURCES
-        src/cpp/math/math_common.h
-        src/cpp/math/matrix2.cpp
-        src/cpp/math/matrix2.h
-        src/cpp/math/matrix3.cpp
-        src/cpp/math/matrix3.h
+#        src/cpp/math/math_common.h
+#        src/cpp/math/matrix2.cpp
+#        src/cpp/math/matrix2.h
+#        src/cpp/math/matrix3.cpp
+#        src/cpp/math/matrix3.h
         src/cpp/math/vector2.cpp
         src/cpp/math/vector2.h
         src/cpp/math/vector3.cpp
         src/cpp/math/vector3.h
-        src/cpp/math/quaternion.cpp
-        src/cpp/math/quaternion.h
+#        src/cpp/math/quaternion.cpp
+#        src/cpp/math/quaternion.h
 
         src/cpp/planet/grid/corner.cpp
         src/cpp/planet/grid/corner.h

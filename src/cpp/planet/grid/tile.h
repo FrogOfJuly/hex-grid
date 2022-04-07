@@ -4,7 +4,6 @@
 #include <vector>
 #include "../../math/vector2.h"
 #include "../../math/vector3.h"
-#include "../../math/quaternion.h"
 class Corner;
 class Edge;
 
@@ -33,9 +32,6 @@ const Edge* nth_edge (const Tile&, int);
 int position (const Tile&, const Tile*);
 int position (const Tile&, const Corner*);
 int position (const Tile&, const Edge*);
-
-Quaternion reference_rotation (const Tile*, Quaternion);
-std::vector<Vector2> polygon (const Tile*, Quaternion);
 
 inline int id (const Tile* t) {return id(*t);}
 inline int edge_count (const Tile* t) {return edge_count(*t);}

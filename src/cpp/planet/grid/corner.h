@@ -8,7 +8,7 @@ class Edge;
 
 class Corner {
 public:
-	Corner (int id);
+	explicit Corner (int id);
 	
 	int id;
 	Vector3 v;

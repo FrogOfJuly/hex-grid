@@ -7,7 +7,7 @@ class Corner;
 
 class Edge {
 public:
-	Edge (int id);
+	explicit Edge (int id);
 	
 	int id;
 	std::array<const Tile*, 2> tiles;
